@@ -1,0 +1,188 @@
+what is react?
+react is  A JAVASCRIPT LIBRARY 
+
+used to build user interfaces 
+especially single-page applications (spAs)
+
+
+why react exists 
+
+traditional js :
+manullay update dom 
+messy event handling 
+haed to scale 
+
+react 
+ui is broken into components 
+ui updates automatically when data changes 
+much easire to reason about  complex apps 
+
+
+
+history of reacts 
+origins invetion (2011-2013)
+2011-created at facebook by jordan walke 
+2012- used internally in facebook news feed 
+2013- open -sourced at jsconf us 
+
+
+growth & adoption (2014-2016)
+
+2014-used in instagram 
+2015-react native announced react for mobile )
+
+2016-create app launched (react app launched for bootstraping react apps )
+
+
+modern evolution 
+
+2019 hooks introduce in reacts 16,8 revolution state management in funtional components 
+
+today -react powers facebbook instagram netflix airbnb and more 
+it is also the core of nexts.js the most popular full-stack react framework
+
+
+virtual dom 
+
+. A lightweight  javascript object representing  the ui 
+.stored in memory as javascript object 
+. very fast to update 
+.used with react (react .create elements or jsx )
+what is it a virtual copy of real dom kept in memory 
+
+
+{
+    type:"h1"
+    props:{
+        childern:"hello world"
+    }
+}
+
+
+features  virtual DOM     real DOM  
+
+speed          fast           slow 
+
+storage        in memory       browser 
+
+updates        smart diffing   full re--render 
+
+
+manipulation   react logic browser api 
+
+
+library vs framework 
+
+library - like your toy box 
+you used only what you want 
+you controll the flow 
+
+examples :reacts loadash jquery axios 
+
+
+framework -like lego instruction 
+
+structure is defined 
+you follows the rules 
+example angular express django 
+
+what is a cdn ?
+CDN= content delivery network 
+network of global servers that deliver content faster 
+
+
+benifits 
+
+.faster load times 
+
+reduced  server load 
+
+better  availability 
+
+
+what  is react called "React"
+
+Reacts to data changes updating  ui efficently using virtual dom 
+
+
+differencerce between react  and ReactDOM 
+
+.React = core logic (components hooks state )
+
+.ReactDOM=connects React with actual dom  
+
+
+react. development.js react.production.js 
+
+
+react development.js vs react.production.js
+
+file            purpose         minified       warnings 
+development     Dev mode          no             yes 
+production        live mode       yes             no 
+
+
+remember elements is an object not html 
+react only runs inside the root elemrnts 
+
+
+JSX ---------------------
+
+Eeact.createElements is verbose 
+.JSX makes  code easier to write and understand 
+
+
+const heading =<h1> hello from react </h1>
+
+
+bundlers yours shipping department 
+
+
+a bundler takes all your sorce  assest & output an optimised bundle that browsers can download 
+
+
+typical pipeline 
+
+1.read every import / require 
+
+2 transpile (JSX->js,TS-> js,etc )
+
+concatenate /code-split 
+mimify & tree -shake unsed code 
+generqate hashed filename for long -terms caching 
+
+serve with hmr hot module replacement ) during  development
+
+
+popular option for  React 
+
+bundler                   higlights 
+webpack                  the most flexible & battle-tested .large plugin ecosystem 
+
+vite                     next-gen instant dev server via natice es modules  uses  rollup for production . recomended now that create react application 
+parcel                   zero-config smart defaults blazing builds  thanks to a c++ core greate for brginners 
+
+
+dependencies  vs dev dependencies 
+
+
+purpose                            install command                       stored 
+
+runtime/production code              npm install axios                  dependencies 
+tooling need only while developing   npm install - eslint               devDependencies 
+
+
+remove any packages 
+
+npm uninstall <package-name> 
+
+
+
+5.version ranges ^ versus ~ 
+
+
+symbol           allows updates              example  "react ":17.0.1 allows 
+
+
+^caret           minor  and patch version     17.0.2,  ....but not 18.0.0
+~tilde           patch version only           17.0.2 17.0.9...but not 17.1.0
